@@ -111,6 +111,10 @@ function HDWalletProvider(
   this.engine.start(); // Required by the provider engine.
 };
 
+HDWalletProvider.prototype.stop = function() {
+  this.engine.stop.apply(this.engine, arguments);
+};
+
 HDWalletProvider.prototype.sendAsync = function() {
   this.engine.sendAsync.apply(this.engine, arguments);
 };
