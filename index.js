@@ -116,7 +116,7 @@ HDWalletProvider.prototype.sendAsync = function() {
 };
 
 HDWalletProvider.prototype.send = function() {
-  return this.engine.send.apply(this.engine, arguments);
+  return this.engine.sendAsync.apply(this.engine, arguments);
 };
 
 // returns the address of the given address_index, first checking the cache
