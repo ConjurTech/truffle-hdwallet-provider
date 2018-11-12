@@ -1,4 +1,4 @@
-const bip39 = require("bip39");
+const bip39 = require("./bip39");
 const ethJSWallet = require('ethereumjs-wallet');
 const hdkey = require('ethereumjs-wallet/hdkey');
 const debug = require('debug')('truffle-hdwallet-provider')
@@ -95,7 +95,7 @@ function HDWalletProvider(
       const sig = ethUtil.ecsign(msgHashBuff, pkey);
       const rpcSig = ethUtil.toRpcSig(sig.v, sig.r, sig.s);
       cb(null, rpcSig);
-      }		     
+      }
   }));
 
   (!shareNonce)
