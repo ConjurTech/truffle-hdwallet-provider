@@ -30,7 +30,7 @@
     "ethereumjs-wallet": "0.6.0",
     "pbkdf2": "^3.0.17",
     "safe-buffer": "^5.1.2",
-    "web3": "^0.20.6",
+    "web3": "0.20.6",
     "web3-provider-engine": "^14.0.5"
   },
   "devDependencies": {
